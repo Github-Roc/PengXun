@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+    <cn.peng.pxun.ui.view.HandIconView
+        android:id="@+id/iv_message_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/icon_nan"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_message_icon"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="16sp"
+            android:lines="1"
+            android:textColor="#101010"/>
+
+        <TextView
+            android:id="@+id/tv_message_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个性签名"
+            android:textSize="14sp"
+            android:lines="1"
+            android:textColor="#6A6A6A"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_add_contact"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add_contact"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.peng.pxun.ui.view.DampView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dv_mine_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_mine_bg"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/userinfo_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-36dp"
+            android:paddingLeft="20dp">
+
+            <cn.peng.pxun.ui.view.HandIconView
+                android:id="@+id/iv_mine_icon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/icon_nan"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_mine_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未登录"
+                        android:textSize="13sp"
+                        android:textColor="@color/chatColor"/>
+
+                    <ImageView
+                        android:id="@+id/iv_mine_sex"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/sex_boy"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mine_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:text="查看或编辑个人资料"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mine_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="好友"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/tab_item_selector"/>
+
+                <TextView
+                    android:id="@+id/tv_mine_group"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="群组"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/tab_item_selector"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/itemColor"/>
+
+            <LinearLayout
+                android:id="@+id/ll_mine_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/tab_item_selector">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/tab_mine_about"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="关于作者"
+                    android:textSize="16sp"
+                    android:textColor="@color/tab_mine_text_selector" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_bigarraw"/>
+
+            </LinearLayout>
+
+            <ImageView style="@style/DivisionLine"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/tab_item_selector">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/tab_mine_setting"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="设置"
+                    android:textSize="16sp"
+                    android:textColor="@color/tab_mine_text_selector" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_bigarraw"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/itemColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</cn.peng.pxun.ui.view.DampView>

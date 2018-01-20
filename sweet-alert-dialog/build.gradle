@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 24
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        signingConfigs {
+            debug {
+                storeFile file('debug.keystore')
+                storePassword "android"
+                keyAlias "androiddebugkey"
+                keyPassword "android"
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.pnikosis:materialish-progress:1.0'
+}
+

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">鹏讯</string>
+
+    <string name="tv_register">
+        <u>注册</u>
+    </string>
+    <string name="registProtocol">
+        <u>用户注册协议</u>
+    </string>
+    <string name="authorBlog">
+        <u>http://pengblog.club/</u>
+    </string>
+    <string name="authorGithub">
+        <u>https://github.com/</u>
+    </string>
+
+    <!-- 登录 -->
+    <string name="tv_login_in">登录</string>
+    <string name="et_hint_login_in">请输入登录帐号</string>
+    <string name="et_hint_password">请输入密码</string>
+    <string name="tv_remember_password">记住密码</string>
+    <string name="tv_skip">跳过</string>
+    <string name="tv_third_login_in">快捷登录</string>
+
+    <!-- 帖子发表 -->
+    <string name="publish_posts_updata">发表</string>
+    <string name="publish_posts_picture">图片</string>
+    <string name="publish_posts_photo">拍照</string>
+    <string name="publish_posts_video">视频</string>
+
+
+    <string name="smoothinputlayout_title">输入面板</string>
+    <string name="smoothinputlayout_voice">按住 说话</string>
+    <string name="smoothinputlayout_picture">图片</string>
+    <string name="smoothinputlayout_take_photo">拍照</string>
+    <string name="cd_smoothinputlayout_voice">语音</string>
+    <string name="cd_smoothinputlayout_emoji">Emoji</string>
+    <string name="cd_smoothinputlayout_more">更多</string>
+    <string name="cd_smoothinputlayout_send">发送消息</string>
+
+</resources>

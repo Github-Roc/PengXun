@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/web_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/web_toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/chatColor">
+
+        <ImageView
+            android:id="@+id/iv_web_goback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/title_goback" />
+
+        <TextView
+            android:id="@+id/tv_web_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>

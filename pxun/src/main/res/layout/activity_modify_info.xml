@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/app_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_modify_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/et_modify_signature"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:padding="3dp"
+            android:maxLength="24"
+            android:hint="请输入个人签名"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_modify_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="最长可以输入24个字符的个人签名"
+        android:textSize="14sp"
+        android:textColor="@color/grey"/>
+
+    <Button
+        android:id="@+id/bt_modify_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_blue_button"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="完成"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

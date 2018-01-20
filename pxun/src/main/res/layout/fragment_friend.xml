@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <cn.peng.pxun.ui.view.SuperListView
+        android:id="@+id/lv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/lineGrey"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/tab_item_selector"/>
+
+    <include
+        android:id="@+id/page_empty"
+        layout="@layout/app_page_empty"
+        android:visibility="gone"/>
+
+</RelativeLayout>

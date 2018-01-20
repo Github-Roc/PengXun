@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.peng.pxun">
+
+    <!-- 网络权限,允许程序访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 获取网络状态,获取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 改变网络状态,改变网络状态如是否能联网 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!-- 获取WiFi状态,获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 改变WiFi状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 获取精确位置,通过GPS芯片接收卫星的定位信息，定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 获取错略位置,通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 访问定位额外命令,允许程序访问额外的定位提供者指令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 相机权限,允许访问摄像头进行拍照 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 读取外部存储,允许程序读取外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 写入外部存储,允许程序写入外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 读取联系人,允许应用访问联系人通讯录信息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 读取电话状态,访问电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 录音，录制声音通过手机或耳机的麦克 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 修改声音设置,修改声音设置信息 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- 使用振动,允许振动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 唤醒锁定,允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 挂载文件系统,挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 获取任务信息,允许程序获取当前或最近运行的应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/peng"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity">
+        </activity>
+        <activity android:name=".ui.activity.RegistActivity">
+        </activity>
+        <activity android:name=".ui.activity.MainActivity">
+        </activity>
+        <activity
+            android:name=".ui.activity.ChatActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".ui.activity.BigPicActivity">
+        </activity>
+        <activity android:name=".ui.activity.DetailedActivity">
+        </activity>
+        <activity android:name=".ui.activity.AboutAuthorActivity">
+        </activity>
+        <activity android:name=".ui.activity.SettingActivity">
+        </activity>
+        <activity android:name=".ui.activity.SearchActivity">
+        </activity>
+        <activity android:name=".ui.activity.FeedbackActivity">
+        </activity>
+        <activity android:name=".ui.activity.CreateGroupActivity">
+        </activity>
+        <activity android:name=".ui.activity.SysMessageActivity">
+        </activity>
+        <activity android:name=".ui.activity.WebActivity">
+        </activity>
+        <activity android:name=".ui.activity.ContactActivity">
+        </activity>
+        <activity android:name=".ui.activity.UserInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.ClipActivity">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1150161206178970#pxun"/>
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"/>
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置友盟应用的AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59c68e326e27a47ab10003fe">
+        </meta-data>
+        <!-- 添加友盟所需的Activity -->
+        <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- QQ -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".ui.activity.ModifyUserInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.PublishPostsActivity">
+        </activity>
+    </application>
+
+</manifest>

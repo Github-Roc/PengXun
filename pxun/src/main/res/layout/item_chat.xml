@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:text="时间"
+        android:textColor="#A6A6A6"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_chat_date">
+
+        <cn.peng.pxun.ui.view.HandIconView
+            android:id="@+id/iv_chat_replyicon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_nv"/>
+
+        <cn.peng.pxun.ui.view.ChatView
+            android:id="@+id/cv_chat_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_left_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="28dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chat_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_chat_date">
+
+        <cn.peng.pxun.ui.view.ChatView
+            android:id="@+id/cv_chat_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_right_bg"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="28dp"
+            android:textColor="#FFFFFF"/>
+
+        <cn.peng.pxun.ui.view.HandIconView
+            android:id="@+id/iv_chat_askicon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_nan"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

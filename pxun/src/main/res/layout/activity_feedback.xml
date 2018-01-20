@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.peng.pxun.ui.activity.FeedbackActivity">
+
+    <include layout="@layout/app_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_feedback_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/right_bigarraw"
+        android:background="@color/white"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:text="请选择反馈原因"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="问题和意见"/>
+
+    <EditText
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="请您详细描述您遇到的问题,并留下联系方式,我会第一时间进行处理"/>
+
+    <Button
+        android:id="@+id/bt_feedback_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交意见"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/selector_blue_button"/>
+
+</LinearLayout>

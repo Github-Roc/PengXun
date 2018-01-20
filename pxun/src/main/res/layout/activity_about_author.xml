@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.peng.pxun.ui.activity.AboutAuthorActivity">
+
+    <include layout="@layout/app_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者博客:"
+                    android:textSize="18sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_author_blog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authorBlog"
+                    android:textSize="18sp"
+                    android:textColor="#358499"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者Github:"
+                    android:textSize="18sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_author_github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authorGithub"
+                    android:textSize="18sp"
+                    android:textColor="#358499"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫码支持创作者"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_auther_wx"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/wx"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:textSize="20sp"
+                android:textColor="#6AA8CC"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/iv_auther_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/zfb"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付宝"
+                android:textSize="20sp"
+                android:textColor="#6AA8CC"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

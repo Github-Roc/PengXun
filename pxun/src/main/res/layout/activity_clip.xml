@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <com.githang.clipimage.ClipImageView
+        android:id="@+id/clip_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:civClipPadding="16dp"
+        app:civHeight="3"
+        app:civMaskColor="#B2000000"
+        app:civWidth="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

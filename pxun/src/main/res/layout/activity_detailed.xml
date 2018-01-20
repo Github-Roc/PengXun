@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_bg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/userinfo_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="144dp">
+
+            <cn.peng.pxun.ui.view.HandIconView
+                android:id="@+id/iv_userinfo_icon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/icon_nan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="昵称:"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_userinfo_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18888888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="性别:"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_userinfo_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="男/女"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="生日:"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_userinfo_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="年  月  日"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="居住地:"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tv_userinfo_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="省  市  县"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/itemColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_userinfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="发消息"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:background="@drawable/btn_send_selector"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

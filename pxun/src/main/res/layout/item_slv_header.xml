@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/iv_slv_arrow"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/refresh" />
+
+        <ProgressBar
+            android:id="@+id/pb_slv_load"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:indeterminateDrawable="@drawable/loading"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_slv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="下拉刷新"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>

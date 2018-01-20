@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#33B5E5</color>
+    <color name="colorPrimaryDark">#33B5E5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRipple">#803f51b5</color>
+    <color name="color_f6">#f6f6f6</color>
+
+    <color name="appColor">#121212</color>
+    <color name="chatColor">#33B5E5</color>
+    <color name="bgColor">#181818</color>
+    <color name="itemColor">#DDDDDD</color>
+    <color name="selectColor">#FB4E30</color>
+    <color name="registerColor">#FF3942</color>
+    <color name="tabColor">#EEEEEE</color>
+    <color name="lineGrey">#BCBCBC</color>
+    <color name="btn_blue_normal">#0076EE</color>
+    <color name="btn_blue_pressed">#0055FF</color>
+
+    <color name="translucent">#00000000</color>
+    <color name="white">#FFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="grey">#888888</color>
+
+</resources>

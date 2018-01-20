@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <cn.peng.pxun.ui.view.HandIconView
+            android:id="@+id/iv_posts_usericon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_nan"/>
+
+        <TextView
+            android:id="@+id/tv_posts_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="昵称"
+            android:textSize="14sp"
+            android:textColor="@color/grey"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_posts_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:textIsSelectable="true"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_posts_pic"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/itemColor"/>
+
+</LinearLayout>

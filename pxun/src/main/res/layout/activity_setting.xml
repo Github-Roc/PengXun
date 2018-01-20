@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_titilebar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_item_selector">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/tab_setting_clear"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="清理缓存"
+            android:textSize="16sp"
+            android:textColor="@color/tab_mine_text_selector" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/right_bigarraw"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_item_selector">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/tab_setting_feedback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="问题反馈"
+            android:textSize="16sp"
+            android:textColor="@color/tab_mine_text_selector" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/right_bigarraw"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_item_selector">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/tab_setting_version"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="检查版本"
+            android:textSize="16sp"
+            android:textColor="@color/tab_mine_text_selector" />
+
+        <TextView
+            android:id="@+id/tv_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="V1.0"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="注销"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_regiest_selector"/>
+
+</LinearLayout>

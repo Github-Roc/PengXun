@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/iv_posts_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_goback_black"/>
+
+            <TextView
+                android:id="@+id/tv_posts_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/publish_posts_updata"
+                android:textSize="16sp"
+                android:textColor="@color/chatColor"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_posts_input"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@null"
+            android:hint="发表帖子"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_posts_piclist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_posts_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_posts_picture"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="@string/publish_posts_picture"
+            android:textSize="16sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_posts_photo"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="@string/publish_posts_photo"
+            android:textSize="16sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_posts_video"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="@string/publish_posts_video"
+            android:textSize="16sp"
+            android:textColor="@color/grey"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
